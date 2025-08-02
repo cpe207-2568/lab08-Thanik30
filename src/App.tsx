@@ -3,7 +3,7 @@ import { Sidebar } from "./components/Sidebar";
 import { TaskInput } from "./components/TaskInput";
 import { Footer } from "./components/Footer";
 import { Task } from "./components/Task";
-import { type TaskCardProps } from "./libs/types"; 
+import { type TaskCardProps } from "./libs/types";
 
 function App() {
   const Taskcards: TaskCardProps[] = [
@@ -28,7 +28,9 @@ function App() {
               {/* input ด้านบน*/}
               <TaskInput />
               {/* Card รายการ */}
-              <Task />
+              <Task {...Taskcards[0]}/>
+              <Task {...Taskcards[1]}/>
+              <Task {...Taskcards[2]}/>
             </div>
           </main>
         </div>
